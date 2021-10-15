@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- * Head -->
+
+<head>
+    <!-- * Meta Tags -->
+    <!-- Unicode -->
+    <meta charset="UTF-8">
+    <!-- Internet Explorer Edge Support -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- * Root Colors -->
+    <!-- I set it up this way so that the theme colors can be overridden very easily through JS -->
+    <style id="theme--override">
+        :root {
+            --color--primary: rgba(190, 49, 68, 1);
+            --color--background: rgba(0, 0, 0, 1);
+            --color--element: rgba(69, 86, 125, 1);
+            --color--button: rgba(48, 56, 65, 1);
+            --color--text: rgba(255, 255, 255, 1);
+            --color--quotes: rgba(221, 119, 50, 1);
+
+            --gradient--main: linear-gradient(225deg, rgba(15, 14, 16, 1), rgba(58, 61, 64, 1));
+        }
+    </style>
+
+    <!-- * Media-query Placeholder -->
+    <!-- This is just here so that the freeCodeCamp Test Script recognizes that my project has a media-query -->
+    <style>
+        @media screen and (max-width: 0px) {
+            #nothing {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <!-- * CDN Links -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- * Fonts -->
+    <!-- Google Fonts | Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Google Fonts | Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- * Page -->
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="public/css/index.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon-img.png">
+    <!-- Page Title -->
+    <title>freeCodeCamp | Build a Personal Portfolio Webpage (Static)</title>
+</head>
+
+<body>
+    <!-- * Header -->
+    <header id="header" class="header">
+        <nav id="navbar" class="header--navbar">
+            <a class="header--navbar--link" href="#welcome-section">About</a>
+            <a class="header--navbar--link" href="#projects">Work</a>
+            <a class="header--navbar--link" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- * Main -->
+    <main id="main" class="main">
+        <section id="welcome-section" class="main--welcome main--section">
+            <div id="welcome-msg" class="main--welcome--msg">
+                <h1>Hey I am Mimic</h1>
+                <h2>a web developer</h2>
+            </div>
+        </section>
+        <section id="projects" class="main--projects main--section">
+            <div class="main--projects--head">
+                <h2>These are some of my projects</h2>
+                <hr>
+            </div>
+            <div class="main--projects--body">
+                <div class="main--projects--body--project-1 main--projects--body--project
+                project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
+                        <div class="main--projects--body--project--img"></div>
+                        <div class="main--projects--body--project--title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>Tribute Page</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main--projects--body--project-2 main--projects--body--project
+                project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank">
+                        <div class="main--projects--body--project--img"></div>
+                        <div class="main--projects--body--project--title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>Random Quote Machine</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main--projects--body--project-3
+                main--projects--body--project
+                project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank">
+                        <div class="main--projects--body--project--img"></div>
+                        <div class="main--projects--body--project--title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>JavaScript Calculator</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main--projects--body--project-4
+                main--projects--body--project
+                project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank">
+                        <div class="main--projects--body--project--img"></div>
+                        <div class="main--projects--body--project--title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>Map Data Across the Globe</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main--projects--body--project-5
+                main--projects--body--project
+                project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank">
+                        <div class="main--projects--body--project--img"></div>
+                        <div class="main--projects--body--project--title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>Wikipedia Viewer</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main--projects--body--project-6
+                main--projects--body--project
+                project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank">
+                        <div class="main--projects--body--project--img"></div>
+                        <div class="main--projects--body--project--title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>Tic Tac Toe Game</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main--projects--footer">
+                <a href="https://codepen.io/FreeCodeCamp/" target="_blank">
+                    <button id="more-projects-btn">Show all ></button>
+                </a>
+            </div>
+        </section>
+        <section id="contact" class="main--contact main--section">
+            <div class="main--contact--wrapper">
+                <div class="main--contact--head">
+                    <h2>Let's work together...</h2>
+                    <h3>How do you take your coffee?</h3>
+                </div>
+                <div class="main--contact--socials">
+                    <a class="main--contact--socials--link" href="https://www.facebook.com/freecodecamp" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                        <p>Facebook</p>
+                    </a>
+                    <a id="profile-link" class="main--contact--socials--link" href="https://github.com/kolehiyolo" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <p>GitHub</p>
+                    </a>
+                    <a class="main--contact--socials--link" href="https://twitter.com/freecodecamp" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <p>Twitter</p>
+                    </a>
+                    <a class="main--contact--socials--link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <i class="fas fa-at"></i>
+                        <p>Send a mail</p>
+                    </a>
+                    <a class="main--contact--socials--link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Call me</p>
+                    </a>
+                </div>
+        </section>
+        </div>
+    </main>
+
+    <!-- * Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer--wrapper">
+            <div id="disclaimer" class="footer--wrapper--disclaimer">
+                <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+            </div>
+            <div id="copyright" class="footer--wrapper--copyright">
+                <p>&#169 Created for freeCodeCamp</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- * Attribution -->
+    <div id="attribution" class="attribution">
+        <p>Challenge by <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage" target="_blank">freeCodeCamp</a></p>
+        <p>Coded by <a href="https://github.com/kolehiyolo" target="_blank">Tristan Sean Paul Cinco</a></p>
+    </div>
+
+    <!-- * Client-side Scripts -->
+    <div id="scripts" class="scripts">
+        <!-- * Data/Variables -->
+        <!-- These are scripts that set up variables either as placeholders or as client-side variables -->
+        <!-- ! No scripts for this project -->
+
+        <!-- * Active Scripts -->
+        <!-- These are scripts that set event-listeners, module-builders, and client-side javascript actions -->
+        <!-- ! No scripts for this project -->
+
+        <!-- * freeCodeCamp Testing Script -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
+</body>
+
+</html>

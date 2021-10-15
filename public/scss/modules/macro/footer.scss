@@ -1,0 +1,24 @@
+.footer {
+    // * Main
+    min-height: 100px;
+    background-color: var(--color--button);
+    border-top: solid 5px var(--color--primary);
+    padding: 30px;
+
+    * {
+        font-size: 1.1875rem;
+    }
+
+    &--wrapper {
+        // * Main
+        max-width: 1250px;
+        margin: 0 auto;
+
+        // * Flexbox
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+}

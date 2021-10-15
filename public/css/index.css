@@ -1,0 +1,232 @@
+:root {
+  font-size: 16px; }
+
+:root {
+  --font--sans-serif: 'Poppins', sans-serif;
+  --font--sans-serif-fancy: 'Raleway', sans-serif; }
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+html {
+  min-height: 100vh;
+  scroll-behavior: smooth; }
+  html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+  html * {
+    font-family: var(--font--sans-serif);
+    color: var(--color--text); }
+  html body {
+    min-height: 100vh;
+    background-color: var(--color--background); }
+    html body .header {
+      width: 100%;
+      height: 75px;
+      background-color: var(--color--primary);
+      padding: 0 25px;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      html body .header * {
+        font-size: 1.5rem; }
+      html body .header--navbar {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        html body .header--navbar--link {
+          height: 100%;
+          padding: 17.5px 20px;
+          box-sizing: border-box;
+          color: var(--color--text);
+          text-decoration: none; }
+          html body .header--navbar--link:hover {
+            background-color: var(--color--element); }
+    html body .main {
+      opacity: 1; }
+      html body .main--section {
+        min-height: 100vh; }
+      html body .main--welcome {
+        background-image: var(--gradient--main);
+        position: relative; }
+        html body .main--welcome--msg {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+          text-align: center; }
+          html body .main--welcome--msg h1 {
+            font-size: 3.4375rem;
+            font-family: var(--font--sans-serif-fancy); }
+          html body .main--welcome--msg h2 {
+            font-size: 1.875rem;
+            font-style: italic;
+            font-weight: 200;
+            color: var(--color--primary); }
+      html body .main--projects {
+        padding-top: 100px;
+        background-color: var(--color--element);
+        text-align: center; }
+        html body .main--projects--head {
+          padding: 0 20px; }
+          html body .main--projects--head h2 {
+            font-size: 2.5rem;
+            font-family: var(--font--sans-serif-fancy); }
+          html body .main--projects--head hr {
+            max-width: 600px;
+            margin: 8px auto;
+            border: solid 1px var(--color--text); }
+        html body .main--projects--body {
+          max-width: 1320px;
+          margin: 40px auto 0;
+          padding: 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          justify-content: center;
+          align-content: center;
+          gap: 40px; }
+          html body .main--projects--body--project a {
+            text-decoration: none; }
+          html body .main--projects--body--project-1 .main--projects--body--project--img {
+            background-image: url("../images/projects/tribute.jpg"); }
+          html body .main--projects--body--project-2 .main--projects--body--project--img {
+            background-image: url("../images/projects/random-quote-machine.png"); }
+          html body .main--projects--body--project-3 .main--projects--body--project--img {
+            background-image: url("../images/projects/calc.png"); }
+          html body .main--projects--body--project-4 .main--projects--body--project--img {
+            background-image: url("../images/projects/map.jpg"); }
+          html body .main--projects--body--project-5 .main--projects--body--project--img {
+            background-image: url("../images/projects/wiki.png"); }
+          html body .main--projects--body--project-6 .main--projects--body--project--img {
+            background-image: url("../images/projects/tic-tac-toe.png"); }
+          html body .main--projects--body--project--img {
+            padding-bottom: 97.5%;
+            background-size: cover;
+            background-position: center; }
+          html body .main--projects--body--project--title {
+            height: 70px;
+            padding: 20px;
+            background-color: var(--color--button); }
+            html body .main--projects--body--project--title h3,
+            html body .main--projects--body--project--title .tile-quotes {
+              display: inline-block; }
+            html body .main--projects--body--project--title .tile-quotes {
+              font-size: 1.125rem;
+              font-weight: 600;
+              color: var(--color--quotes);
+              opacity: 0;
+              transition: opacity 0.5s ease-in-out 0s; }
+            html body .main--projects--body--project--title h3 {
+              font-weight: 600; }
+          html body .main--projects--body--project:hover .tile-quotes {
+            opacity: 1; }
+        html body .main--projects--footer a #more-projects-btn {
+          background-color: var(--color--button);
+          padding: 10px 20px;
+          margin: 50px 0 80px;
+          border: none;
+          font-size: 1.25rem;
+          font-weight: 500; }
+      html body .main--contact {
+        min-height: calc(100vh - 175px);
+        background-color: var(--color--button);
+        position: relative; }
+        html body .main--contact--wrapper {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center; }
+        html body .main--contact--head {
+          margin-bottom: 25px;
+          padding: 0 10px; }
+          html body .main--contact--head h2 {
+            font-size: 3.8125rem;
+            font-family: var(--font--sans-serif-fancy); }
+          html body .main--contact--head h3 {
+            font-size: 1.125rem;
+            font-style: italic;
+            font-weight: 300; }
+        html body .main--contact--socials {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 10px 30px; }
+          html body .main--contact--socials--link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5625rem;
+            text-decoration: none;
+            padding: 0px 0px 10px;
+            transition: padding 0.4s ease-in-out; }
+            html body .main--contact--socials--link:hover {
+              padding: 10px 0px 0px; }
+    html body .footer {
+      min-height: 100px;
+      background-color: var(--color--button);
+      border-top: solid 5px var(--color--primary);
+      padding: 30px; }
+      html body .footer * {
+        font-size: 1.1875rem; }
+      html body .footer--wrapper {
+        max-width: 1250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px; }
+    html body .attribution {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.5rem;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      opacity: 0; }
+
+@media (max-width: 460px) {
+  html body .header {
+    height: 65px;
+    justify-content: center; }
+    html body .header * {
+      font-size: 1.25rem; } }
+
+@media (max-width: 1200px) {
+  html body .main--projects--head h2 {
+    font-size: 2.3rem; } }
+
+@media (max-width: 1093px) {
+  html body .main--projects--body {
+    grid-template-columns: 1fr 1fr; }
+    html body .main--projects--body--project--img {
+      padding-bottom: 75%; } }
+
+@media (max-width: 732px) {
+  html body .main--projects--body {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 460px) {
+  html body .main--contact--head h2 {
+    font-size: 2.25rem; }
+  html body .main--contact--socials--link {
+    font-size: 1.3rem; }
+  html body .footer--wrapper {
+    flex-direction: column; } }

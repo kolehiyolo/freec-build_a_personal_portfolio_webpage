@@ -1,0 +1,295 @@
+// * Node-SASS Script For Exporting
+// node-sass public/scss/index.scss public/css/index.css
+
+// * Root Properties
+@import "../../public/scss/others/_root.scss";
+
+html {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+
+    // * Overriding Default Box Model
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    // * Project Font
+    * {
+        font-family: var(--font--sans-serif);
+        color: var(--color--text);
+    }
+
+    // * Body
+    body {
+        min-height: 100vh;
+        background-color: var(--color--background);
+
+        // * Header
+        @import "../../public/scss/modules/macro/header.scss";
+
+        // * Main
+        .main {
+            opacity: 1;
+
+            &--section {
+                min-height: 100vh;
+            }
+
+            &--welcome {
+                // * Main
+                background-image: var(--gradient--main);
+
+                // * Positioning
+                position: relative;
+
+                &--msg {
+                    // * Main
+                    width: 100%;
+
+                    // * Positioning
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    // * Flexbox
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                    text-align: center;
+
+                    h1 {
+                        // * Font
+                        font-size: 3.4375rem;
+                        font-family: var(--font--sans-serif-fancy);
+                    }
+
+                    h2 {
+                        // * Font
+                        font-size: 1.875rem;
+                        font-style: italic;
+                        font-weight: 200;
+                        color: var(--color--primary);
+                    }
+                }
+            }
+
+            &--projects {
+                // * Main
+                padding-top: 100px;
+                background-color: var(--color--element);
+
+                // * Font
+                text-align: center;
+
+                &--head {
+                    // * Main
+                    padding: 0 20px;
+
+                    h2 {
+                        font-size: 2.5rem;
+                        font-family: var(--font--sans-serif-fancy);
+                    }
+
+                    hr {
+                        max-width: 600px;
+                        margin: 8px auto;
+                        border: solid 1px var(--color--text);
+                    }
+                }
+
+                &--body {
+                    // * Main
+                    max-width: 1320px;
+                    margin: 40px auto 0;
+                    padding: 20px;
+
+                    // * Grid
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    justify-content: center;
+                    align-content: center;
+                    gap: 40px;
+
+                    &--project {
+                        a {
+                            text-decoration: none;
+                        }
+
+                        &-1 {
+                            .main--projects--body--project--img {
+                                background-image: url("../images/projects/tribute.jpg");
+                            }
+                        }
+
+                        &-2 {
+                            .main--projects--body--project--img {
+                                background-image: url("../images/projects/random-quote-machine.png");
+                            }
+                        }
+
+                        &-3 {
+                            .main--projects--body--project--img {
+                                background-image: url("../images/projects/calc.png");
+                            }
+                        }
+
+                        &-4 {
+                            .main--projects--body--project--img {
+                                background-image: url("../images/projects/map.jpg");
+                            }
+                        }
+
+                        &-5 {
+                            .main--projects--body--project--img {
+                                background-image: url("../images/projects/wiki.png");
+                            }
+                        }
+
+                        &-6 {
+                            .main--projects--body--project--img {
+                                background-image: url("../images/projects/tic-tac-toe.png");
+                            }
+                        }
+
+                        &--img {
+                            padding-bottom: 97.5%;
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                        &--title {
+                            // * Main
+                            height: 70px;
+                            padding: 20px;
+                            background-color: var(--color--button);
+
+                            h3,
+                            .tile-quotes {
+                                display: inline-block;
+                            }
+
+                            .tile-quotes {
+                                // * Font
+                                font-size: 1.125rem;
+                                font-weight: 600;
+                                color: var(--color--quotes);
+
+                                // * Animation
+                                opacity: 0;
+                                transition: opacity 0.5s ease-in-out 0s;
+                            }
+
+                            h3 {
+                                font-weight: 600;
+                            }
+                        }
+
+                        &:hover .tile-quotes {
+                            opacity: 1;
+                        }
+
+                    }
+                }
+
+                &--footer {
+                    a {
+                        #more-projects-btn {
+                            // * Main
+                            background-color: var(--color--button);
+                            padding: 10px 20px;
+                            margin: 50px 0 80px;
+                            border: none;
+
+                            // * Font
+                            font-size: 1.25rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            &--contact {
+                // * Main 
+                min-height: calc(100vh - 175px);
+                background-color: var(--color--button);
+
+                // * Positioning
+                position: relative;
+
+                &--wrapper {
+                    // * Main
+                    width: 100%;
+
+                    // * Positioning
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    // * Font
+                    text-align: center;
+                }
+
+                &--head {
+                    // * Main
+                    margin-bottom: 25px;
+                    padding: 0 10px;
+
+                    h2 {
+                        font-size: 3.8125rem;
+                        font-family: var(--font--sans-serif-fancy);
+                    }
+
+                    h3 {
+                        font-size: 1.125rem;
+                        font-style: italic;
+                        font-weight: 300;
+                    }
+                }
+
+                &--socials {
+                    // * Flexbox
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 10px 30px;
+
+                    &--link {
+                        // * Flexbox
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 10px;
+
+                        // * Font
+                        font-size: 1.5625rem;
+                        text-decoration: none;
+
+                        // * Transition
+                        padding: 0px 0px 10px;
+                        transition: padding 0.4s ease-in-out;
+
+                        &:hover {
+                            padding: 10px 0px 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // * Footer
+        @import "../../public/scss/modules/macro/footer.scss";
+
+        // * Attribution
+        @import "../../public/scss/modules/macro/attribution.scss";
+    }
+}
+
+// * Others
+// Media Queries
+@import "../../public/scss/others/_media-queries.scss";
